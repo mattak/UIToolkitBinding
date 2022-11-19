@@ -4,10 +4,10 @@ Binding class generator for UIToolkit
 
 ## Install
 
-add following lines to upm
+add following lines to Packages/manifest.json
 
 ```
-"me.mattak.uitookitbinding": ""https://github.com/mattak/UIToolkitBinding.git"
+"me.mattak.uitoolkitbinding": "https://github.com/mattak/UIToolkitBinding.git"
 ```
 
 ## Usage
