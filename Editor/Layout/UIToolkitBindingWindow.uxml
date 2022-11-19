@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Label tabindex="-1" text="Settings" display-tooltip-when-elided="true" style="margin-right: 8px; margin-left: 8px; margin-top: 8px; margin-bottom: 8px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+    <ui:Button tabindex="-1" text="CreateSetting" display-tooltip-when-elided="true" name="CreateSettingButton" style="display: flex;" />
+    <ui:Button tabindex="-1" text="GenerateAll" display-tooltip-when-elided="true" name="GenerateAllButton" />
+    <uie:InspectorElement label="SettingsInspector" focusable="true" value="true" name="SettingsInspector" style="display: flex;" />
+</ui:UXML>
