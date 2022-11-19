@@ -6,10 +6,10 @@ namespace UIToolkitBinding.EditorRuntime
 {
     public class UIToolkitBindingWindow : EditorWindow
     {
-        [MenuItem("Window/UIToolkitBinding")]
+        [MenuItem("Window/UI Toolkit Binding")]
         public static void ShowWindow()
         {
-            GetWindow<UIToolkitBindingWindow>("UIToolkitBinding");
+            GetWindow<UIToolkitBindingWindow>("UI Toolkit Binding");
         }
 
         private void OnEnable()
@@ -58,6 +58,7 @@ namespace UIToolkitBinding.EditorRuntime
         private static void OnClickGenerateAll()
         {
             var settings = UIToolkitBindingSetting.LoadFromAsset();
+            if (settings == null) return;
             BindingGenerator.GenerateAll(settings.WriteDirectory, settings.Namespace);
         }
 

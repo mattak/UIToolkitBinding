@@ -26,7 +26,7 @@ namespace UIToolkitBinding.EditorRuntime
         private static void Update(string uxmlFilePath)
         {
             var settings = UIToolkitBindingSetting.LoadFromAsset();
-            if (!settings.IsEnableAssetPostprocessor) return;
+            if (settings == null || !settings.IsEnableAssetPostprocessor) return;
 
             var bindingFilePath = BindingGenerator.Generate(settings.WriteDirectory, settings.Namespace, uxmlFilePath);
             Debug.Log($"GenerateBinding: {uxmlFilePath} -> {bindingFilePath}");
