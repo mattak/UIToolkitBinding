@@ -8,6 +8,7 @@ namespace UIToolkitBinding.EditorRuntime
         TextField,
         Toggle,
         Label,
+        ListView,
     }
 
     public static class UIElementTypeCreator
@@ -22,6 +23,7 @@ namespace UIToolkitBinding.EditorRuntime
                 case "ui:TextField": return UIElementType.TextField;
                 case "ui:Toggle": return UIElementType.Toggle;
                 case "ui:Label": return UIElementType.Label;
+                case "ui:ListView": return UIElementType.ListView;
                 default: return null;
             }
         }
