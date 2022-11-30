@@ -55,7 +55,7 @@ namespace YourNamespace
 
 Then you can use binding without any queries.
 
-```
+```csharp
 using UnityEngine;
 using UnityEngine.UIElements;
 
