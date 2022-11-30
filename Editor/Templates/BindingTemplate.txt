@@ -8,7 +8,11 @@ namespace #NAMESPACE#
     {
 #PROPERTIES#
 
-        public #CLASS_NAME#(UIDocument document)
+        public #CLASS_NAME#(UIDocument document) : this(document.rootVisualElement)
+        {
+        }
+
+        public #CLASS_NAME#(VisualElement rootVisualElement)
         {
 #INITIALIZER_QUERIES#
         }
