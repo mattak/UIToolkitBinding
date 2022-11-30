@@ -59,7 +59,7 @@ namespace UIToolkitBinding.EditorRuntime
                 {
                     var name = kv.Key.ToUpperCamel();
                     var uiType = kv.Value.ToString();
-                    return $"            this.{name} = document.rootVisualElement.Q<{uiType}>(\"{name}\");";
+                    return $"            this.{name} = rootVisualElement.Q<{uiType}>(\"{name}\");";
                 })
             );
 
